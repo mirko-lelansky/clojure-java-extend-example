@@ -20,4 +20,4 @@ $ lein uberjar
 
 and then
 
-$ $java -jar
+$ $java -jar ./target/uberjar/clojure-java-extend-example-0.1.0-SNAPSHOT-standalone.jar 

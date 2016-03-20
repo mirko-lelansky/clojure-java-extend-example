@@ -1,9 +1,10 @@
 (defproject clojure-java-extend-example "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description "An example clojure project where a java-class will extended."
   :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :license {:name "Apache License 2.0"
+            :url "http://www.apache.org/licenses/LICENSE-2.0"}
   :dependencies [[org.clojure/clojure "1.8.0"]]
-  :main ^:skip-aot clojure-java-extend-example.core
+  :main streamy.core.Main
+  :aot [clojure-java-extend-example.io clojure-java-extend-example.core]
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
